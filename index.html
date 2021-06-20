@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <h2 class="visually">Список дел</h2>
+    <div class="todo-list">
+      <div class="todo-list-item very-impotent">
+        <h3>Очень важные</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+      <div class="todo-list-item impotent">
+        <h3>Важные</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+      <div class="todo-list-item maybee">
+        <h3>Можно и сделать</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+    </div>
+    <p class="empty-tasks hidden">Все задачи выполнены. Новых задач нет.</p>
+    <form class="add-form" action="#" method="post">
+      <input class="add-form-input" type="text"  aria-label="Описание задачи" placeholder="Например, купить слона" width="300px" required>
+      <button class="add-form-button" type="submit">Добавить задачу</button>
+    </form>
+    <!--завершенные блок--> 
+    <div class="todo-list completed">
+      <div class="todo-list-item very-impotent doun ">
+        <h3>Сделано</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+      <div class="todo-list-item impotent doun">
+        <h3>Сделано</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+      <div class="todo-list-item maybee doun">
+        <h3>Сделано</h3>
+        <label>
+          <input class="todo-list-input" type="checkbox">
+          <span></span>
+        </label>
+      </div>
+    </div>
+    
+
+    <template id="task-template">
+      <li class="todo-list-item">
+        <label>
+          <input type="checkbox" class="todo-list-input">
+          <span></span>
+        </label>
+      </li>
+    </template>
+    <script src="script.js"></script>
+  </body>
+</html>
